@@ -1,0 +1,107 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "customer support",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "WelcomeIntent",
+          "slots": [],
+          "samples": [
+            "greet me ",
+            "fbl",
+            "hey fbl"
+          ]
+        },
+        {
+          "name": "MyNameIsIntent",
+          "slots": [
+            {
+              "name": "Name",
+              "type": "AMAZON.Person"
+            }
+          ],
+          "samples": [
+            "I  am called {Name}",
+            "{Name}",
+            "its {Name}",
+            "you can call me {Name}",
+            "myself {Name}",
+            "My name is {Name}"
+          ]
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "CustomerServiceIntent",
+          "slots": [],
+          "samples": [
+            "I need lights",
+            "I need products",
+            "is anyone there",
+            "i need assistant",
+            "where is assistant",
+            "I need help"
+          ]
+        },
+        {
+          "name": "RemindMeIntent",
+          "slots": [],
+          "samples": [
+            "add  test reminder ",
+            "can add a test remind ",
+            "set test reminder ",
+            "test reminder"
+          ]
+        },
+        {
+          "name": "WalkieTalkieIntent",
+          "slots": [],
+          "samples": [
+            "open walkie talkie",
+            "enable walkie talkie",
+            "start walkie talkie",
+            "Walkie talkie"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "AMAZON.Person",
+          "values": [
+            {
+              "name": {
+                "value": "Name"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

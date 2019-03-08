@@ -1,0 +1,63 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Get notified on your customer arrival",
+          "examplePhrases": [
+            "Alexa, open Customer Support",
+            "Alexa, open Customer Service"
+          ],
+          "keywords": [
+            "FBL",
+            "Flashing blinking lights"
+          ],
+          "name": "FblAlexAssistant",
+          "description": "Get notified on your Customers"
+        }
+      }
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:464359432532:function:fbl_lambdas"
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::alerts:reminders:skill:readwrite"
+      }
+    ],
+    "events": {
+      "endpoint": {
+        "uri": "arn:aws:lambda:us-east-1:464359432532:function:fbl_lambdas"
+      },
+      "subscriptions": [
+        {
+          "eventName": "SKILL_ENABLED"
+        },
+        {
+          "eventName": "REMINDER_DELETED"
+        },
+        {
+          "eventName": "REMINDER_CREATED"
+        },
+        {
+          "eventName": "REMINDER_STARTED"
+        },
+        {
+          "eventName": "SKILL_ACCOUNT_LINKED"
+        }
+      ],
+      "regions": {
+        "NA": {
+          "endpoint": {
+            "uri": "arn:aws:lambda:us-east-1:464359432532:function:fbl_lambdas"
+          }
+        }
+      }
+    }
+  }
+}
